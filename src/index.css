@@ -1,6 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: red;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+.welcome__body {
+  background: linear-gradient(180deg, #4F48EC 0%, rgba(79, 72, 236, 0.00) 255.36%);
+  height: 100vh;
+  color: white;
+}
+
+.cloud__body {
+  height: 100%;
+  width: calc(100% / 2.3);
+  background-color: white;
+  position: absolute;
+  right: 0px;
+}
+
+.cloud__circle {
+  width: 453px;
+  height: 365px;
+  border-radius: 452px;
+  background-color: white;
+  position: absolute;
+}
+
+.cloud__circle--top {
+  left: -28px;
+  top: -85px;
+}
+
+.cloud__circle--two {
+  left: -80px;
+  top: 10px;
+}
+
+.cloud__circle--three {
+  left: -10px;
+  top: 90px;
+}
+
+.cloud__circle--four {
+  left: -100px;
+  top: 190px;
+}
+
+.cloud__circle--five {
+  left: -50px;
+  bottom: 30px;
+}
+
+.cloud__circle--six {
+  left: -70px;
+  bottom: -110px;
+}
+
+.cloud__body--darkPurple {
+  position: absolute;
+  right: 100px;
+  top: 10px;
+}
+
+.cloud__circle--darkPurple {
+  background-color: #CAC8F9;
+}
+
+.cloud__body--lightPurple {
+  position: absolute;
+  right: 50px;
+  top: -10px;
+}
+
+.cloud__circle--lightPurple {
+  background-color: #F4F3FE;
 }
