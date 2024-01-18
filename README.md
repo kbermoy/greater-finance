@@ -1,3 +1,19 @@
+# 💸 Greater Finance
+
+This project is to help people <b style="color: green;">manage</b> their <b style='color:green'>finance</b> that I plan to personally use.
+It will be created with React and Firebase to authenticate users and use a specific API to pull data that will be necessary for future features
+
+### 📝 Upcoming Features 
+- [ ] View subscriptions, current balance, and current debt
+- [ ] Set weekly, biweekly, and monthly budgeting
+- [ ] Recieve alerts if you are close to reaching your budget of the week, biweekly, or monthly
+- [ ] Block any payments from apps that user choose from (e.g. doordash, ubereats, amazon)
+
+### 🕒 Project Timeline
+- [ ] Create a welcome page to sign in or sign up using Firebase (in progres....)
+- [ ] Create home page with side bar navigation, and charts of expenses
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
