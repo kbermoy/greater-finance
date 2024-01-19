@@ -13,6 +13,8 @@ It will be created with React and Firebase to authenticate users and use a speci
 - [ ] Create a welcome page to sign in or sign up using Firebase (in progres....)
 - [ ] Create home page with side bar navigation, and charts of expenses
 
+<img width="1440" alt="Screenshot 2024-01-18 at 3 59 29 PM" src="https://github.com/kbermoy/greater-finance/assets/108269273/128e08e6-e4ea-4ebd-bcd8-dd4d34a8f0ee">
+
 
 # Getting Started with Create React App
 
