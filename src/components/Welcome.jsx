@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Cloud from "./UI/Cloud";
 import UserForm from "./UI/UserForm";
 import { render } from "@testing-library/react";
+import { Link } from "react-router-dom";
 
 const Welcome = ({ existingUser, signUp, login }) => {
 
@@ -13,7 +14,7 @@ const Welcome = ({ existingUser, signUp, login }) => {
         {existingUser ? (
           <>
             <div className="signUp__action--details">Don't have an account?</div>
-            <div className="signUp__action--btn" onClick={signUp}>Sign Up</div>
+            <Link to="/" className="signUp__action--btn" onClick={signUp}>Sign Up</Link>
           </>
         ) : (
           <>

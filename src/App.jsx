@@ -1,22 +1,22 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from 'react-router-dom';
 import Welcome from './components/Welcome';
 import Cloud from './components/UI/Cloud';
 import React from 'react'
 import { useState } from 'react';
 import { render } from '@testing-library/react';
 import { auth } from './components/firebase/init'
-import { createUserWithEmailAndPassword } from 'firebase/auth'
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth'
+import Home from './components/Home';
 
 /**
- *  TODO'S FOR 01/19/2024
- *  [] sign up user
- *  [] log in user
- *  [] start home page UI
+ *  TODO'S FOR 01/20/2024
+ *  [] when logged in reroute to the Home page
  */
 
 function App() {
   const [existingUser, setExistingUser] = useState(true);
+  const [loggedIn, setLoggedIn] = useState(false)
 
   function signUp(event) {
     event.preventDefault();
@@ -26,15 +26,15 @@ function App() {
     const userEmail = document.getElementById('userEmail').value;
     const userPassword = document.getElementById('userPassword').value
 
-    // createUserWithEmailAndPassword(auth, email, password)
-    //   .then((userCredential) => {
-    //     // Sign Up
-    //     const user = userCredential.user
-    //   })
-    //   .catch((error) => {
-    //     const errorCode = error.code;
-    //     const errorMessage = error.message
-    //   })  
+    createUserWithEmailAndPassword(auth, userEmail, userPassword)
+      .then((user) => {
+        // Sign Up
+        console.log(user);
+        setLoggedIn(true)
+      })
+      .catch((error) => {
+        window.alert('Email already registered. Please log in')
+      })  
 
     render();
   }
@@ -42,17 +42,28 @@ function App() {
   function login(event) {
     event.preventDefault()
     setExistingUser(true);
-    render()
 
     const userEmail = document.getElementById('userEmail').value
     const userPassword = document.getElementById('userPassword').value
     
+    signInWithEmailAndPassword(auth, userEmail, userPassword)
+      .then((user) => {
+        // Signed In
+        console.log('logged in')
+        console.log(user)
+        setLoggedIn(true)
+      })
+      .catch((error) => {
+        window.alert('Not Registered or invalid email or password.')
+      })
   }
 
   return (
     <Router>
       <Welcome existingUser={existingUser} signUp={signUp} login={login}/>
-      {/* <Cloud /> */}
+      <Routes>
+        
+      </Routes>
     </Router>
   );
 }
