@@ -3,6 +3,9 @@
 This project is to help people <b style="color: green;">manage</b> their <b style='color:green'>finance</b> that I plan to personally use.
 It will be created with React and Firebase to authenticate users and use a specific API to pull data that will be necessary for future features
 
+### Current ToDo
+- [ ] When user logs in, redirect to Home page | Progress for Jan 20th
+
 ### 📝 Upcoming Features 
 - [ ] View subscriptions, current balance, and current debt
 - [ ] Set weekly, biweekly, and monthly budgeting
