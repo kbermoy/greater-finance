@@ -1,6 +1,8 @@
 import React from "react";
+import { useHistory } from 'react-router-dom' // used to reroute to the page you want to
 
 const UserForm = ({ existingUser, signUp, login}) => {
+
   return (
     <div className="welcome__userInput--container">
       {existingUser

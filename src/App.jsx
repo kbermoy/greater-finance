@@ -39,6 +39,8 @@ function App() {
     render();
   }
 
+  let navigate = useNavigate()
+
   function login(event) {
     event.preventDefault()
     setExistingUser(true);
@@ -51,7 +53,10 @@ function App() {
         // Signed In
         console.log('logged in')
         console.log(user)
+        console.log(user._tokenResponse.registered)
         setLoggedIn(true)
+
+        navigate('/home')
       })
       .catch((error) => {
         window.alert('Not Registered or invalid email or password.')
@@ -59,12 +64,10 @@ function App() {
   }
 
   return (
-    <Router>
-      <Welcome existingUser={existingUser} signUp={signUp} login={login}/>
       <Routes>
-        
+        <Route path='/' Component={() => <Welcome existingUser={existingUser} signUp={signUp} login={login} />} />
+        <Route path='/home' Component={() => <Home />} />
       </Routes>
-    </Router>
   );
 }
 

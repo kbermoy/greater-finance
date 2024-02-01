@@ -4,7 +4,8 @@ This project is to help people <b style="color: green;">manage</b> their <b styl
 It will be created with React and Firebase to authenticate users and use a specific API to pull data that will be necessary for future features
 
 ### Current ToDo
-- [ ] When user logs in, redirect to Home page | Progress for Jan 20th
+- [ ] Protected routes: only allow logged in users to view their home page
+- [ ] When user logs in, redirect to Home page 
 
 ### 📝 Upcoming Features 
 - [ ] View subscriptions, current balance, and current debt
