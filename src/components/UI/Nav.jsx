@@ -11,7 +11,6 @@ const Nav = () => {
           </li>
         </ul>
       </div>
-      
     </nav>
   );
 };
