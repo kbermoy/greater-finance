@@ -63,7 +63,7 @@ function App() {
       })
   }
 
-  return (
+  return ( 
       <Routes>
         <Route path='/' Component={() => <Welcome existingUser={existingUser} signUp={signUp} login={login} />} />
         <Route path='/home' Component={() => <Home />} />

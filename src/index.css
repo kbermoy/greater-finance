@@ -221,3 +221,82 @@ nav {
   color: #4F48EC;
   border: none;
 }
+
+/*  FEATURED NAVIGATION  */
+.featureNav__container {
+  background-color: lightgray;
+  height: calc(100vh - 170px);
+  width: 200px;
+  border-radius: 45px;
+  margin-top: 40px;
+  margin-left: 30px;
+  position: relative;
+}
+
+.featureNav__links {
+  position: absolute;
+  top: 26px;
+  left: 20px;
+}
+
+.featureNav__link {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+/*  CURRENT BALANCE  */
+.grayContainer {
+  padding: 20px;
+  border-radius: 35px;
+  background-color: lightgray;
+}
+
+.featurePages__container {
+  position: absolute;
+  top: 120px;
+  left: 300px;
+}
+
+.featurePages__row {
+  width: 1000px;
+}
+
+.home__top {
+  display: flex;
+  width: 100%;
+}
+
+.currentBalance__container,
+.creditDebt__container {
+  width: 50%;
+}
+
+.currentBalance__container {
+  margin-right: 25px;
+}
+
+.creditDebt__container {
+  margin-left: 30px;
+}
+
+.feature__title {
+  font-size: 26px;
+}
+
+.userBank__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.userBank__title,
+.userBank__balance {
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+/*  SUBCRIPTIONS  */
+.subscriptions__container {
+  width: 1000px;
+  margin-top: 40px;
+}
