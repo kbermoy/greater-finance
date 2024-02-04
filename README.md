@@ -5,7 +5,6 @@ It will be created with React and Firebase to authenticate users and use a speci
 
 ### Current ToDo
 - [ ] Get necessarry info in order to request data from API (Plaid)
-- [x] When user logs in, redirect to Home page (Completed on Jan 31, 2024)
 
 ### 📝 Upcoming Features 
 - [ ] View subscriptions, current balance, and current debt
@@ -14,8 +13,8 @@ It will be created with React and Firebase to authenticate users and use a speci
 - [ ] Block any payments from apps that user choose from (e.g. doordash, ubereats, amazon)
 
 ### 🕒 Project Timeline
-- [ ] Create a welcome page to sign in or sign up using Firebase (in progres....)
-- [ ] Create home page with side bar navigation, and charts of expenses
+- [ ] Create home page with side bar navigation, and use API to get dummy data for checking balances and credit balances 
+- [x] Create a welcome page to sign in or sign up using Firebase ---- Completed on Jan 31, 2024
 
 <img width="1440" alt="Screenshot 2024-01-18 at 3 59 29 PM" src="https://github.com/kbermoy/greater-finance/assets/108269273/128e08e6-e4ea-4ebd-bcd8-dd4d34a8f0ee">
 
